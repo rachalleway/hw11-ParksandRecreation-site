@@ -167,11 +167,7 @@
         font-size: 2rem;
     }
 
-    .alignment__right {
-        max-width: 40%;
-      }
-    
-    .alignment__left {
+    .alignment__right, .alignment__left {
         max-width: 40%;
       }
 
@@ -191,64 +187,84 @@
 }
 
 @media screen and (max-width: 500px) {
-    body{
-        max-width: 500px;
-        font-size: .6rem;
+  body{
+      max-width: 500px;
+      font-size: .7rem;
+  }
+
+  header {
+      max-width: 500px;
+  }
+
+  .header__link {
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+  .main__hero{
+      height: 420px;
+      width: 550px;
+  }
+
+  .alignment__left, .alignment__right{
+    text-align: center;
+    max-width: 60%;
+  }
+
+  .alignment__left {
+    margin-top: 0px;
+  }
+
+  .characters{
+    width: 490px;
+  }
+
+  .characters, .locations, .events{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 0;
+  }
+
+  .events{
+    width: 450px;
+  }
+
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  h2{
+      font-size: 1rem;
+  }
+
+  .characters img {
+    padding: 10px;
     }
 
-    header {
-        max-width: 500px;
+  .events img{
+      padding: 10px;
+      max-width: 40%;
     }
 
-    .header__link {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
+  .locations img{
+    max-width: 30%;
+    padding: 10px;
+  }
 
-    .main__hero{
-        height: 420px;
-        width: 500px;
-    }
+  .hero__text {
+      margin-top: 20px;
+      max-width: 50%;
+        }
 
-    .characters, .events, .locations{
-        width: 500px;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    h2{
-        font-size: 1rem;
-    }
-
-    .alignment__right {
-        max-width: 40%;
-      }
-    
-    .alignment__left {
-        max-width: 40%;
-      }
-
-    .characters img {
-        padding-right: 60px;
-      }
-
-    .events img{
-        padding-right: 20px;
-        max-width: 40%;
-      }
-    
-    .locations img{
-        max-width: 50%;
-    }
-
-    .hero__text {
-        margin-top: 30px;
-        max-width: 40%;
-          }
-    
-    footer {
-        width: 500px;
-    }
+.button {
+    font-size: .7rem;
+        }
+      
+  footer{
+    width: 520px;
+  }
 }
