@@ -1,0 +1,148 @@
+:root {
+    --primary-color: #4ab239;
+    --secondary-color: #2d7122;
+    --attn-color: #fccb1d;
+    --off-white: #f8f6f2;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    max-width: 1920px;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "a a a"
+    "a a a"
+    "a a a"
+    "a a a"
+    "footer footer footer";
+  }
+
+  p {
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+
+  header {
+    background-color: var(--secondary-color);
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+    z-index: 99999;
+    display: grid;
+    grid-area: header;
+    position: fixed;
+  }
+
+  .header__link {
+    font-size: .9rem;
+    color: var(--off-white);
+    text-decoration: none;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .header__link:hover {
+    color: #fccb1d;
+  }
+
+  .spacer{
+    height: 150px;
+  }
+
+  .img_card__container {
+    grid-area: a;
+    display: grid;
+    row-gap: 60px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: repeat (4, 100px);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .img_card {
+    background-color: #f8f6f2;
+    padding: 10px;
+    box-shadow: lightgray 2px 2px 5px 2px;
+    }
+
+
+  footer {
+    background-color: #2d7122;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    display: grid;
+    grid-area: footer;
+  }
+
+  @media screen and (max-width: 900px) {
+    body{
+        max-width: 900px;
+        font-size: 1rem;
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "a a"
+        "a a"
+        "a a"
+        "a a"
+        "footer footer";
+    }
+
+    header {
+        max-width: 900px;
+    }
+
+    .header__link {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .img_card__container {
+        grid-area: a;
+        display: grid;
+        row-gap: 50px;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: repeat (6, 100px);
+      }
+}
+
+@media screen and (max-width: 500px) {
+    body{
+        max-width: 500px;
+        font-size: 1rem;
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "a"
+        "a"
+        "a"
+        "a"
+        "footer";
+    }
+
+    header {
+        max-width: 500px;
+    }
+
+    .header__link {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .img_card__container {
+        grid-area: a;
+        display: grid;
+        row-gap: 50px;
+        grid-template-columns: 300px;
+        grid-template-rows: repeat (12, 100px);
+      }
+}
