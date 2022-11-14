@@ -1,1 +1,3 @@
 # hw11-ParksandRecreation-site
+
+Though our commit history reflects some imbalances, there was a similar amount of work spread out between the team. Rachalle worked on the home and characters page, Jessica on the locations page, and Christopher on the past events page. There may have been discrepencies reflected on the commit hisotry because of the way things were commited to the repo and merged with the main branch. 
