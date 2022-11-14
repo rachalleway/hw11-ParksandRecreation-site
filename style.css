@@ -27,7 +27,7 @@ header {
     z-index: 99999;
 }
 
-.header_link {
+.header__link {
     font-size: .9rem;
     color: var(--off-white);
     text-decoration: none;
@@ -35,7 +35,7 @@ header {
     padding-right: 35px;
 }
 
-.header_link:hover {
+.header__link:hover {
     color: #fccb1d;
 }
 
@@ -131,7 +131,7 @@ footer {
         margin: 0
     }
 
-    .header_link {
+    .header__link {
         padding-left: 15px;
         padding-right: 15px;
     }
